@@ -30,3 +30,8 @@
   color: blue;
   font-weight: bold;
 }
+.price {
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+}

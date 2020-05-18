@@ -1,11 +1,6 @@
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useHistory,
-} from "react-router-dom";
+import { Route } from "react-router-dom";
+import ProductDetail from "./product-detail";
 import originalData from "../data/products.json";
 
 export default class Products extends Component {
@@ -57,7 +52,12 @@ export default class Products extends Component {
           </div>
           {data.map((d) => {
             return (
-              <div className="product-items">
+              <div
+                className="product-items"
+                onClick={() => {
+                  this.props.history.push(`/products/${d.id}`);
+                }}
+              >
                 <div className="items">{d.name}</div>
                 <div className="items">{d.description}</div>
                 <div className="items">{d.price}</div>
