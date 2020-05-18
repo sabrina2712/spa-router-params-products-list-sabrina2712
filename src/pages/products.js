@@ -6,12 +6,12 @@ import {
   Link,
   useHistory,
 } from "react-router-dom";
-import data from "../data/products.json";
+import originalData from "../data/products.json";
 
 export default class Products extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: data };
+    this.state = { data: [...originalData] };
   }
   onAscendingClick = () => {
     this.setState((state) => {
@@ -34,8 +34,10 @@ export default class Products extends Component {
   };
 
   onResetHandler = () => {
-    this.setState({ data: data });
+    console.log("here in reset");
+    this.setState({ data: [...originalData] });
   };
+
   render() {
     let data = this.state.data;
     return (
