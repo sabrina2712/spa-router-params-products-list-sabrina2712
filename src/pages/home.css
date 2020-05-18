@@ -1,0 +1,32 @@
+.container {
+  background-color: aqua;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.product-button {
+  width: 200px;
+  background-color: white;
+}
+.product-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+.product-items {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+.items {
+  margin: 5px;
+  padding: 5px;
+}
+.product-header {
+  font-size: 1.6em;
+  color: blue;
+  font-weight: bold;
+}
