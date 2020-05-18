@@ -32,11 +32,15 @@ export default class Products extends Component {
       return { data: data };
     });
   };
+
+  onResetHandler = () => {
+    this.setState({ data: data });
+  };
   render() {
     let data = this.state.data;
     return (
       <div>
-        <button>Reset</button>
+        <button onClick={this.onResetHandler}>Reset</button>
         <button onClick={this.onAscendingClick}>Ascending</button>
         <button onClick={this.onDescendingClick}>Descending</button>
         <div className="product-header" onClick={this.onClickHandler}>
