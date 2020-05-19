@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 .product-button {
-  width: 200px;
+  width: 80px;
   background-color: white;
 }
 .product-container {
@@ -34,4 +34,30 @@
   color: black;
   font-size: 2em;
   font-weight: bold;
+}
+.price-container {
+  display: flex;
+  justify-content: center;
+
+  border: solid 1px blue;
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+}
+.price-name {
+  color: black;
+  font-size: 1.2em;
+
+  margin: 20px;
+}
+.price-home {
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 20px;
+}
+.price-label {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
 }

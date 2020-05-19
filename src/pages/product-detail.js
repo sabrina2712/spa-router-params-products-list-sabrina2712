@@ -18,6 +18,13 @@ export default class ProductDetail extends Component {
         </div>
         <div className="descrip">{product.description}</div>
         <div className="price">${product.price}</div>
+        <button
+          onClick={() => {
+            this.props.history.push("/products");
+          }}
+        >
+          Prev
+        </button>
       </>
     );
   }
