@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import data from "../data/products.json";
+import "./product-details.css";
 
 export default class ProductDetail extends Component {
   constructor(props) {
@@ -32,31 +33,37 @@ export default class ProductDetail extends Component {
     }
     return (
       <>
-        <div>{product.name}</div>
-        <div>
-          <img className="image" src={product.image} alt="" />
-        </div>
-        <div className="descrip">{product.description}</div>
-        <div className="price">${product.price}</div>
-        {prevId ? (
-          <button
-            onClick={() => {
-              this.props.history.push(`/products/${prevId}`);
-            }}
-          >
-            Prev
-          </button>
-        ) : null}
+        <div className="details-container">
+          <div className="name">{product.name}</div>
+          <div>
+            <img className="image" src={product.image} alt="" />
+          </div>
+          <div className="description">{product.description}</div>
+          <div className="price">${product.price}</div>
+          <div className="buttons">
+            {prevId ? (
+              <button
+                className="prev-button"
+                onClick={() => {
+                  this.props.history.push(`/products/${prevId}`);
+                }}
+              >
+                Prev
+              </button>
+            ) : null}
 
-        {nextId ? (
-          <button
-            onClick={() => {
-              this.props.history.push(`/products/${nextId}`);
-            }}
-          >
-            Next
-          </button>
-        ) : null}
+            {nextId ? (
+              <button
+                className="next-button"
+                onClick={() => {
+                  this.props.history.push(`/products/${nextId}`);
+                }}
+              >
+                Next
+              </button>
+            ) : null}
+          </div>
+        </div>
       </>
     );
   }

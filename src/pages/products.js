@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./product.css";
 
 import ProductDetail from "./product-detail";
 import originalData from "../data/products.json";
@@ -36,19 +37,21 @@ export default class Products extends Component {
   render() {
     let data = this.state.data;
     return (
-      <div>
-        <button onClick={this.onResetHandler}>Reset</button>
-        <button onClick={this.onAscendingClick}>Ascending</button>
-        <button onClick={this.onDescendingClick}>Descending</button>
+      <div className="main-container">
+        <div className="button-container">
+          <button onClick={this.onResetHandler}>Reset</button>
+          <button onClick={this.onAscendingClick}>Ascending</button>
+          <button onClick={this.onDescendingClick}>Descending</button>
+        </div>
         <div className="product-header" onClick={this.onClickHandler}>
           Product Lists:
         </div>
 
-        <div className="product-container">
-          <div className="product-items">
-            <div className="items">Name</div>
-            <div className="items">Description</div>
-            <div className="items">Price</div>
+        <div>
+          <div className="head-container">
+            <div className="items-head">Name</div>
+            <div className="items-head">Description</div>
+            <div className="items-head">Price</div>
           </div>
           {data.map((d) => {
             return (
@@ -59,7 +62,7 @@ export default class Products extends Component {
                 }}
               >
                 <div className="items">{d.name}</div>
-                <div className="items">{d.description}</div>
+                <div className="items">{d.slug}</div>
                 <div className="items">{d.price}</div>
               </div>
             );

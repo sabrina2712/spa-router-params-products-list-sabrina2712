@@ -11,11 +11,12 @@ export default class Home extends Component {
       .slice(0, 4);
 
     return (
-      <div>
+      <div className="outer">
         <div className="container">
           <h1 className="header">Welcome Visitor</h1>
 
           <button
+            className="product-button"
             onClick={() => {
               this.props.history.push("/products");
             }}

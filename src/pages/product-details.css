@@ -1,0 +1,29 @@
+.details-container {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  margin: 20px;
+
+  padding: 5px;
+  font-size: 2em;
+  color: blue;
+}
+.description {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.price {
+  margin: 20px;
+  float: left;
+}
+
+.prev-button {
+  width: 40px;
+  flex-direction: row;
+}
+.next-button {
+  width: 40px;
+}
