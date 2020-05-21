@@ -9,7 +9,7 @@ export default class Home extends Component {
         return b.price - a.price;
       })
       .slice(0, 4);
-    console.log(highestPricesObjArray);
+
     return (
       <div>
         <div className="container">

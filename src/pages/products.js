@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+
 import ProductDetail from "./product-detail";
 import originalData from "../data/products.json";
 
