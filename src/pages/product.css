@@ -12,6 +12,7 @@
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
+  background-color: #cad3c8;
 }
 .head-container {
   display: flex;
@@ -19,10 +20,9 @@
   position: relative;
   width: 700px;
   height: 50px;
-  background-color: blue;
+  background-color: #48dbfb;
   border-radius: 10px;
   margin-bottom: 5px;
-  opacity: 70%;
 }
 .product-items {
   display: flex;
@@ -32,8 +32,7 @@
   height: 40px;
   border-radius: 10px;
   margin-bottom: 5px;
-  background-color: darkgray;
-  opacity: 80%;
+  background-color: #cad3c8;
 }
 .items {
   cursor: pointer;
@@ -46,16 +45,22 @@
   width: 100%;
   position: relative;
 
-  padding: 8px;
+  padding: 11px;
+  font-size: 1.4em;
 }
 .product-header {
-  font-size: 1.6em;
-  color: blue;
+  font-size: 2.2em;
+  color: black;
   font-weight: bold;
   margin-bottom: 30px;
+  float: left;
+}
+.header-top {
+  display: flex;
+  align-items: baseline;
 }
 .product-label {
-  background-color: aqua;
+  background-color: #7efff5;
   height: 40px;
   display: flex;
   flex-wrap: nowrap;
@@ -63,4 +68,20 @@
 .items-label {
   flex: 1 1 auto;
   margin: 8px;
+}
+.list-label {
+  font-size: 0.8em;
+  background-color: cornflowerblue;
+  margin: 10px;
+  color: black;
+}
+.filter {
+  margin: 20px;
+}
+.filter-text {
+  margin: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.fas fa-chevron-left {
 }

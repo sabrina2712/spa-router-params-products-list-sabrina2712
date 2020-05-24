@@ -29,7 +29,7 @@ export default class Home extends Component {
             return (
               <div className="price-container">
                 <div className="price-name"> {ele.name}</div>
-                <div className="price-home"> {ele.price}</div>
+                <div className="price-home"> ${ele.price}</div>
               </div>
             );
           })}

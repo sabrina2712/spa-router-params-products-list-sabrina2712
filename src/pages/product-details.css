@@ -6,8 +6,8 @@
   margin: 20px;
 
   padding: 5px;
-  font-size: 2em;
-  color: blue;
+  font-size: 1.6em;
+  color: black;
 }
 .description {
   width: 70%;
@@ -23,7 +23,18 @@
 .prev-button {
   width: 40px;
   flex-direction: row;
+  margin-right: 400px;
+  color: #48dbfb;
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1.2em;
 }
 .next-button {
   width: 40px;
+  color: #48dbfb;
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1.2em;
 }
